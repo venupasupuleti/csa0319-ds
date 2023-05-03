@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int f=1,n,i;
+printf("enter positive num=");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+  f=f*i;
+}
+if(n>=1)
+printf("foctorial %d is %d",n,f);
+else
+printf("foctorial %d is 1",n);
+}
