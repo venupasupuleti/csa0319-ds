@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *a=(int*) malloc(sizeaof(int*)*10);
+	int i;
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	int m,l,h,k=7,f=0;
+	l=0;
+	h=sizeof(a);
+	while(l<=h)
+	{
+		
+		m=(l+h)/2;
+		if(a[m]==k)
+		 {
+		 	f=1;
+		 	break;
+		 }
+		else if(a[m]<k)
+		{
+			l=m+1;
+			
+		}
+		else
+		  {
+		  	h=m-1;
+		  }
+		
+	}
+ if(f==1)
+  printf("found at %d",m);
+ else
+ printf("not found");
+  
+}
