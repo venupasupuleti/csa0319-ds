@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int k,n,i,a[20],f=0,;
+	printf("enter size=  ");
+	scanf("%d",&n);
+	printf("enter elements=  ");
+	for(i=0;i<n;i++)
+	 {
+	 	scanf("%d",&a[i]);
+	 }
+	 printf("enter key=  ");
+	scanf("%d",&k);
+		for(i=0;i<n;i++)
+	 { 
+	    
+	 	if(a[i]==k);
+	    {
+	 	 f=1;
+	 	 break;
+	    }
+	 }
+	 if(f==1)
+	   printf("element is found ");
+	 else
+	   printf("element is not found");
+	
+}
